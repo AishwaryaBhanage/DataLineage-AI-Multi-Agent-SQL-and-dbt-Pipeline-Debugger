@@ -1,0 +1,30 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.Python
+*.egg-info/
+dist/
+build/
+
+# Environment / secrets
+.env
+*.env
+
+# dbt artifacts (generated, not source)
+dbt_demo/target/
+dbt_demo/logs/
+dbt_demo/.user.yml
+
+# OS
+.DS_Store
+*.swp
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+logs/
+*.log

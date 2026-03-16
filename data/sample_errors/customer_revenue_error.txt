@@ -1,0 +1,6 @@
+Runtime Error in model customer_revenue (models/customer_revenue.sql)
+Binder Error: Referenced column "amount" not found in FROM clause!
+Candidate bindings: "amount_total", "status", "order_date", "customer_id"
+
+LINE 15:     sum(amount) as total_revenue,
+                 ^
