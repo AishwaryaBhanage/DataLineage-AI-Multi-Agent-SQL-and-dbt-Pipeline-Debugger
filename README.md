@@ -27,57 +27,49 @@ A multi-agent AI debugger that:
 
 ### 1 — Input screen
 
-Paste a broken SQL model + error message, provide the `manifest.json` path or upload it.
+Paste a broken SQL model + error message, provide the `manifest.json` path or upload it. Click **▶ Load sample failure** in the sidebar to auto-fill a realistic broken dbt model.
 
-![Landing page](screenshots/01_landing.png)
-
----
-
-### 2 — Sample loaded
-
-Click **▶ Load sample failure** in the sidebar to auto-fill a realistic broken dbt model.
-
-![Sample loaded](screenshots/02_sample_loaded.png)
+![Input screen](screenshots/1_Main.png)
 
 ---
 
-### 3 — Input filled
+### 2 — Lineage Graph
 
-The broken SQL (`customer_revenue`) and the dbt error message side-by-side.
+The pipeline DAG rebuilt from `manifest.json`. Broken model highlighted in red — trace upstream to find where the column went missing.
 
-![Input section](screenshots/03_input.png)
-
----
-
-### 4 — Parsed SQL Structure
-
-`sqlglot` extracts every table, column, aggregation, dbt ref, and CTE from the SQL.
-
-![Parsed SQL](screenshots/04_parsed_sql.png)
+![Lineage graph](screenshots/2_lineage.png)
 
 ---
 
-### 5 — Error Analysis + Lineage Graph
+### 3 — Error Analysis
 
-All sub-errors parsed individually. The lineage DAG shows every upstream model — broken nodes in red, healthy in green.
+All sub-errors parsed individually into typed cards — model name, column, line number, and warehouse candidate columns shown.
 
-![Error and lineage](screenshots/05_error_lineage.png)
-
----
-
-### 6 — Rule Engine — Deterministic Analysis
-
-Confidence-ranked root-cause hits with evidence and fix hints — no LLM required.
-
-![Rule engine](screenshots/06_rule_engine.png)
+![Error analysis](screenshots/3_error.png)
 
 ---
 
-### 7 — Auto-corrected SQL
+### 4 — Rule Engine — Deterministic Analysis
 
-The rule engine generates a corrected query automatically. Claude (when credits available) adds plain-English explanation, validation checklist, and impact summary.
+Confidence-ranked root-cause hits with evidence and exact fix hints — no LLM required.
 
-![Corrected SQL](screenshots/07_corrected_sql.png)
+![Rule engine](screenshots/4_score.png)
+
+---
+
+### 5 — Valid Query Detection
+
+When the SQL is already correct, the system detects no issues and shows a green "Query is valid" banner.
+
+![Valid query](screenshots/5_query.png)
+
+---
+
+### 6 — Auto-corrected SQL
+
+Side-by-side diff of original vs corrected SQL, generated automatically by the rule engine. Download button included.
+
+![Corrected SQL](screenshots/6_output_correct_query.png)
 
 ---
 
