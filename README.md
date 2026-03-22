@@ -2,13 +2,13 @@
 
 > **Project** · Aishwarya Bhanage · Stony Brook University
 
-An AI-powered debugger that ingests broken SQL/dbt models and error messages, reconstructs pipeline lineage, and outputs confidence-scored root causes with corrected queries — cutting debug time from hours to minutes.
+An AI-powered debugger that ingests broken SQL/dbt models and error messages, reconstructs pipeline lineage, and outputs confidence-scored root causes with corrected queries - cutting debug time from hours to minutes.
 
 ---
 
 ## Problem
 
-Data engineers and analysts still play **pipeline detective** when SQL/dbt jobs fail. Existing tools surface errors but rarely identify the true upstream cause, forcing manual lineage tracing and trial-and-error fixes — resulting in slower debugging, broken dashboards, and unreliable pipelines.
+Data engineers and analysts still play **pipeline detective** when SQL/dbt jobs fail. Existing tools surface errors but rarely identify the true upstream cause, forcing manual lineage tracing and trial-and-error fixes - resulting in slower debugging, broken dashboards, and unreliable pipelines.
 
 ---
 
