@@ -1,6 +1,6 @@
 # DataLineage AI - Multi-Agent SQL & dbt Pipeline Debugger
 
-> **Student Project** · Aishwarya Bhanage · 116556145
+> **Project** · Aishwarya Bhanage · Stony Brook University
 
 An AI-powered debugger that ingests broken SQL/dbt models and error messages, reconstructs pipeline lineage, and outputs confidence-scored root causes with corrected queries — cutting debug time from hours to minutes.
 
