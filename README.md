@@ -1,4 +1,4 @@
-# DataLineage AI — Multi-Agent SQL & dbt Pipeline Debugger
+# DataLineage AI - Multi-Agent SQL & dbt Pipeline Debugger
 
 > **Student Project** · Aishwarya Bhanage · 116556145
 
